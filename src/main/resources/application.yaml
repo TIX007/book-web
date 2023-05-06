@@ -1,0 +1,7 @@
+spring:
+#  mvc:
+#    static-path-pattern: /res/**   这个会导致welcome page功能失效
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true   #开启页面表单的Rest功能
