@@ -6,10 +6,12 @@
 </head>
 <body>
 <h3>你好！！！！！</h3>
+<a href="/car/2/owner/李四?age=18&inters=basketball&inters=game&format=json">/car/{id}/owner/{username}</a>
+<a href="/cars/sell;low=34;brand=byd,audi,yd">/car/{id}/owner/{username}</a>
 <form action="/user" method="get" >
     <input value="REST-GET 提交" type="submit">
 </form>
-<form action="/user" method="post" >
+<form action="/user?format=json" method="post" >
     <input value="REST-POST 提交" type="submit">
 </form>
 <form action="/user" method="post" >
@@ -20,5 +22,11 @@
     <input name="_method" value="PUT" type="hidden">
     <input value="REST-PUT 提交" type="submit">
 </form>
+<form action="/save" method="post">
+    userName:<input name="userName">
+    email:<input name="email">
+    <input type="submit" value="提交">
+</form>
+
 </body>
 </html>
